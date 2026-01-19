@@ -2,54 +2,53 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <title>Happy Birthday Rahayu 🎂</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Happy Birthday 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Font (NON BASIC) -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts (estetik, non-basic) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Musik -->
-  <audio id="music" src="music.mp3" loop></audio>
+  <!-- Background Slideshow -->
+  <div class="slideshow">
+    <div class="slide active"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+  </div>
 
-  <!-- Opening -->
-  <section class="opening">
-    <h1>🎉 Happy Birthday 🎉</h1>
-    <h2>Rahayu Angguni Amalia</h2>
-    <button onclick="startSurprise()">Mulai Kejutan 💖</button>
-  </section>
+  <!-- Overlay -->
+  <div class="overlay"></div>
 
-  <!-- Ucapan -->
-  <section class="message hidden">
-    <p>
+  <!-- Content -->
+  <div class="content">
+    <h1>Happy Birthday</h1>
+    <h2>Rahayu Angguni Amalia 🎂</h2>
+
+    <p class="message">
       Di hari spesial ini, aku cuma mau bilang…  
-      kamu bukan cuma seseorang yang lahir di hari ini,  
-      tapi seseorang yang selalu bikin hidup aku terasa lebih hidup.
-      Terima kasih sudah bertahan, tersenyum, dan menjadi kamu 🌷
+      terima kasih sudah hadir di hidupku,  
+      menjadi alasan senyum, tawa, dan semangatku setiap hari.  
+      Semoga semua mimpi kamu pelan-pelan jadi nyata,  
+      dan aku bisa selalu ada di setiap langkahmu 🤍
     </p>
-  </section>
 
-  <!-- Galeri Kenangan -->
-  <section class="gallery hidden">
-    <h3>Kenangan Kita 📸</h3>
-    <div class="photos">
-      <img src="images/foto1.png" />
-      <img src="images/foto2.png" />
-      <img src="images/foto3.png" />
+    <button id="surpriseBtn">Klik Surprise 🎁</button>
+
+    <div id="surpriseBox" class="hidden">
+      <p>
+        Aku harap setiap foto ini mengingatkan kamu  
+        betapa berharganya setiap momen kita.  
+        Happy Birthday, my favorite person 💕
+      </p>
     </div>
-  </section>
+  </div>
 
-  <!-- Surprise -->
-  <section class="surprise hidden">
-    <button onclick="showLove()">Klik Kalau Kamu Sayang Aku ❤️</button>
-    <div id="loveText"></div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="hidden">
-    <p>Made with ❤️ by seseorang yang sangat mencintaimu</p>
-  </footer>
+  <!-- Music -->
+  <audio id="bgMusic" src="music.mp3" loop></audio>
 
   <script src="script.js"></script>
 </body>

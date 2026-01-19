@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hello World!</title>
-		<link rel="stylesheet" href="bluestyle.css">
-	</head>
-	<body>
-		<h1>Hello World!</h1>
-		<div><img src="img_hello_world.jpg" alt="Hello World from 		Space" style="width:100%; max-width:640px;"></div>
-		<p>This is the first file in my new Git Repo</p>
-		<p>A new line in our file</p>
-		<p>This line is here to show how merging works</p>
-		<div><img src="img_hello_git.jpeg" alt="Hello Git"
-			style="width:100%; max-width:640px;"></div>
-	</body>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Rahayu 🎂</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font (NON BASIC) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Musik -->
+  <audio id="music" src="music.mp3" loop></audio>
+
+  <!-- Opening -->
+  <section class="opening">
+    <h1>🎉 Happy Birthday 🎉</h1>
+    <h2>Rahayu Angguni Amalia</h2>
+    <button onclick="startSurprise()">Mulai Kejutan 💖</button>
+  </section>
+
+  <!-- Ucapan -->
+  <section class="message hidden">
+    <p>
+      Di hari spesial ini, aku cuma mau bilang…  
+      kamu bukan cuma seseorang yang lahir di hari ini,  
+      tapi seseorang yang selalu bikin hidup aku terasa lebih hidup.
+      Terima kasih sudah bertahan, tersenyum, dan menjadi kamu 🌷
+    </p>
+  </section>
+
+  <!-- Galeri Kenangan -->
+  <section class="gallery hidden">
+    <h3>Kenangan Kita 📸</h3>
+    <div class="photos">
+      <img src="images/foto1.jpg" />
+      <img src="images/foto2.jpg" />
+      <img src="images/foto3.jpg" />
+    </div>
+  </section>
+
+  <!-- Surprise -->
+  <section class="surprise hidden">
+    <button onclick="showLove()">Klik Kalau Kamu Sayang Aku ❤️</button>
+    <div id="loveText"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="hidden">
+    <p>Made with ❤️ by seseorang yang sangat mencintaimu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
